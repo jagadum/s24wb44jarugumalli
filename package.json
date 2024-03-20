@@ -1,0 +1,23 @@
+{
+  "name": "s24wb44jarugumalli",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.4",
+    "express": "^4.19.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "description": "WA Assignment 10\u001b[D\u001b[\u001b[\u001b[\u001b[C\u001b[\u0016\u001bWAAssignment10",
+  "main": "app.js",
+  "keywords": [
+    "Hello"
+  ],
+  "author": "s567144",
+  "license": "ISC"
+}
