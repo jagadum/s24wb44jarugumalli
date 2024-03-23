@@ -3,4 +3,25 @@ extends layout
 block content
   h1= title
   //- Display query parameters
-  p Grid Rows: #{query.rows}, Columns: #{query.cols}
+  p Query Parameters:
+    | Rows: #{query.rows}, Columns: #{query.cols}
+  
+  - let rows = Number(query.rows)
+  - let cols = Number(query.cols)
+
+  - if (!Number.isInteger(rows) || !Number.isInteger(cols))
+    p Invalid input: Rows and Columns must be integers.
+
+  - else if (rows < 3 || rows > 13)
+    p Invalid input: Rows must be between 3 and 13.
+
+  - else if (cols < 3 || cols > 13)
+    p Invalid input: Columns must be between 3 and 13.
+
+  - else
+    //- Construct table
+    table(style="margin: 30px;")#outer
+      - for (let i = 0; i < rows; i++)
+        tr#middle
+          - for (let j = 0; j < cols; j++)
+            td(style="padding: 10px;")= Math.min(i + 1, j + 1)

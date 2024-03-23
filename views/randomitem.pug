@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 A random item
+  - var image_names = ['dress1.webp', 'dress2.webp', 'dress3.webp', 'dress4.webp', 'dress5.jpg']
+  - for (let i = 0; i < 3; i++)
+    - var randomIndex = Math.floor(Math.random() * 5)
+    img(src=`/images/${image_names[randomIndex]}`, alt=image_names[randomIndex], height="300", width="300")
