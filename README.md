@@ -3,6 +3,9 @@
 Hello Everyone,
 
 Link to my remote Render server: https://s24wb44jarugumalli.onrender.com/
+Link to my remote Render server: https://s24wb44jarugumalli.onrender.com/dress
+Link to my remote Render server: https://s24wb44jarugumalli.onrender.com/grid
+Link to my remote Render server: https://s24wb44jarugumalli.onrender.com/pick
 
 ### Class: Dresses
 
