@@ -6,7 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var gridRouter = require('./routes/grid'); // Import the grid router
+var dessertRouter = require('./routes/dessert');
+var gridRouter = require('./routes/grid'); // Make sure the path is correct
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/dessert', dessertRouter);
 app.use('/grid', gridRouter); // Add the grid router
 
 // catch 404 and forward to error handler
