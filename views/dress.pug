@@ -9,20 +9,21 @@ block content
         let results = [
           { dress_type: 'Casual', dress_size: 'Medium', dress_price: 30 },
           { dress_type: 'Formal', dress_size: 'Large', dress_price: 50 },
-          { dress_type: 'Party', dress_size: 'Small', dress_price: 40 }
+          { dress_type: 'Party', dress_size: 'Small', dress_price: 40 },
+          { dress_type: 'Semi-Formal', dress_size: 'Medium', dress_price: 55 }, 
+          { dress_type: 'Night Wear', dress_size: 'Medium', dress_price: 45 }
         ]
         
       each dress,index in results
         .col-sm-2 
-        div.col-sm-2(onclick=`buy(${index})`)
-        
-          p Dress Type: #{dress.dress_type}
-          p Size: #{dress.dress_size}
-          p Price: $#{dress.dress_price.toFixed(2)}
+          div.col-sm-2(onclick=`buy(${index})`)
+            p Dress Type: #{dress.dress_type}
+            p Size: #{dress.dress_size}
+            p Price: $#{dress.dress_price.toFixed(2)}
 
   a(href="/") Back to index
 
-    script. 
+    script.
         function buy(index) {
             alert(`You purchased item ${index}`);
         }
